@@ -49,8 +49,8 @@ STEP 9:For ‘N ‘ iterations ,do the following:<BR>
 STEP 10:Plot the error for each iteration <BR>
 STEP 11:Print the accuracy<BR>
 # PROGRAM:
-    ```
-    import numpy as np
+```
+ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
@@ -80,9 +80,9 @@ class Perceptron:
      return np.dot(x, self._w) + self._b
  def predict(self, x: np.array):
      return np.where(self.f(x) >= 0,1,-1)
-    ```
-    ```
-    df = pd.read_csv("/content/IRIS.csv")
+```
+```
+df = pd.read_csv("/content/IRIS.csv")
 print(df.head())
 y = df.iloc[:,4].values
 x = df.iloc[:,0:3].values
@@ -111,13 +111,13 @@ plt.plot(range(1,len(classifier.misclassified_samples)+1),classifier.misclassifi
 plt.xlabel('Epoch')
 plt.ylabel('Errors')
 plt.show()
-    ```
+```
 
 # OUTPUT:
-
-    ![{6A696C65-0310-4CB5-8C2C-D904DEF9B863}](https://github.com/user-attachments/assets/21f3c728-e525-4463-ad3e-aff51de7e0a8)
-    ![{167454B2-8239-477F-B796-E35ABB36DD31}](https://github.com/user-attachments/assets/6b053a75-6234-4588-ae15-2ca8e807ab34)
-    ![{BFF99DBB-C150-427D-B9F8-38A0C936482C}](https://github.com/user-attachments/assets/f9ff5d86-5546-439a-8147-3a808ce66e29)
+![{6A696C65-0310-4CB5-8C2C-D904DEF9B863}](https://github.com/user-attachments/assets/21f3c728-e525-4463-ad3e-aff51de7e0a8)
+![{167454B2-8239-477F-B796-E35ABB36DD31}](https://github.com/user-attachments/assets/6b053a75-6234-4588-ae15-2ca8e807ab34)
+![{BFF99DBB-C150-427D-B9F8-38A0C936482C}](https://github.com/user-attachments/assets/f9ff5d86-5546-439a-8147-3a808ce66e29)
+    
 
 # RESULT:
  Thus, a single layer perceptron model is implemented using python to classify Iris data set.
